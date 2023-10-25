@@ -1,46 +1,159 @@
-html{
-    height:100%;
-}
-
-body{
-    background: linear-gradient(#FFFFFF 30%, #20A4A4 90%, #005656);
-    margin:0;
-    height:100%;
-}
-
-h1{
-    color:#008080;
-    font-size: 250%;
+html, body {
+    height: 100%;
+    margin: 0;
     font-family: "linotype-sabon", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    color: #C0C0C0;
+    line-height: 1.6;
 }
 
-p{
-    color:#008080;
-    font-family: "linotype-sabon", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+body {
+    background: #001F3F;
 }
 
-nav{
-    padding: 2%;
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+h1, h2, h3, h4 {
+    color: #00BFFF;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: black;
+}
+
+nav {
+    padding: 0.5% 1%;
+    display: flex;  
+    gap: 20px;
+    background-color: #003366;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+a {
+    color: #FF1493;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #FF69B4; 
+}
+
+a.nav {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+    background-color: #FF1493;
+    transition: background-color 0.3s;
+    max-height: 30px;
+    margin-right:auto;
+}
+
+a.nav:hover {
+    background-color: #FF69B4;
+}
+
+.nav .icon {
+    display: none;
+  }
+
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.main-content {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding:5%;
 }
 
-a.nav{
-    font-family: "linotype-sabon", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 100%;
-    justify-content: right;
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
 }
 
-a.nav:hover{
-    color:#20A4A4;
+/* ... Your Existing Styles ... */
+
+.topnav {
+    background-color: #003366;
+    overflow: hidden;
+    border-radius: 5px;
 }
 
-footer{
-    position: fixed;
-    bottom:0;
+.topnav a {
+    float: left;
+    margin-left:auto;
+    color: #FF1493;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: color 0.3s;
 }
+
+.topnav a:hover {
+    color: #FF69B4;
+    background-color: #ddd;
+}
+
+.topnav a.active {
+    color: #fff;
+    background-color: #FF1493;
+}
+
+#logo {
+    float: left;
+    max-width: 50px;
+    height: auto;
+    padding: 10px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child):not(.icon) {
+        display: none;
+    }
+    .topnav a.icon {
+        display: block;
+    }
+    .topnav.responsive a:not(.icon) {
+        float: none;
+        display: block;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .topnav.responsive #logo {
+        display: none;
+    }
+}
+

@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/vur0xdg.css">
-    <title>Anthony's Portfolio</title>
-</head>
-<body>
-    <nav>
-        <a class="nav" href="./about">About Me</a>
-        <a class="nav" href="./projects">Projects</a>
-    </nav>
-    <section class="about">
-        <h1>Hello my name is Anthony Lopez.</h1>
-        <p>I am a Junior Information Science Major at the University of Maryland. 
-            I am interested in all things tech, Software Development, Web Development, AI, IT, and More!</p>
-        <a href="./about">More About Me</a>
-    </section>
-    <section class="projects">
-        <h2>Projects</h2>
-        <h3>Course Projects</h3>
-        <h3>Websites</h3>
-        <h3>App Concepts</h3>
-    </section>
-    <footer>
-        <p>Contact, Social Media</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/vur0xdg.css">
+        <link rel="icon" href="images/usbdrive.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Anthony's Portfolio</title>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <img class="nav" id="logo" src="images/usbdrive.png">
+            <a href="./index" class="active">Home</a>
+            <a href="./about">About</a>
+            <a href="./projects">Projects</a>
+            <a href="#">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <main class="main-content">
+            <section class="about">
+                <h1>Hello, my name is Anthony Lopez.</h1>
+                <p>I am a Junior undergraduate student at the University of Maryland studying Information Science. 
+                    I am interested in all things tech: Software Development, Web Development, AI, IT, and more!</p>
+                <p> I am currently seeking an internship in Software Development and IT.</p>
+                <a href="./about">More About Me</a>
+            </section>
+            <section class="projects">
+                <h2>Some of my Projects</h2>
+                <br>
+                <h3>Course Projects</h3>
+                <div class="card">
+                    <h4>Course Recommender Program</h4>
+                    <p>This is a project that I made for my INST326 class, where I developed a course recommender program using Python that searches for courses based on keywords and department names.
+                        Led a team of two members in implementing the program and utilized SQLite as the database management system to store course information and sections.
+                        Designed and implemented web scraping functionality using Selenium to extract course data from a website.
+                         </p>
+                    <a href="">Learn More</a>
+                </div>
+                <br>
+                <h3>Websites</h3>
+                <div class="card">
+                    <h4>Secure Product</h4>
+                    <p>Some description here...</p>
+                </div>
+                <br>
+                <div class="card">
+                    <h4>Projects</h4>
+                    <p>Project details...</p>
+                </div>
+                <br>
+                <h3>App Concepts</h3>
+                <div class="card">
+                    <h4>Secure Product</h4>
+                    <p>Some description here...</p>
+                </div>
+                <br>
+                <div class="card">
+                    <h4>Projects</h4>
+                    <p>Project details...</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Contact, Social Media</p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
 </html>
+
