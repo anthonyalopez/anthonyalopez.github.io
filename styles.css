@@ -2,12 +2,12 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: "linotype-sabon", sans-serif;
-    color: #C0C0C0 black;
+    color: #C0C0C0 black #333333 ;
     line-height: 1.6;
 }
 
 body {
-    background: #EEEEEE/*#001F3F*/;
+    background: #EDEDED /*#001F3F*/;
 }
 
 h1, h2, h3 {
@@ -28,7 +28,7 @@ h3 {
 }
 
 h1, h2, h3, h4 {
-    color: #003333;
+    color: #555555 ;
 }
 
 p {
@@ -48,37 +48,9 @@ nav {
     overflow: hidden;
 }
 
-a {
-    color: #7FDBFF/*#FF1493*/;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #FF69B4; 
-}
-
-a.nav {
-    color: #fff;
-    padding: 10px 20px;
-    display: block;
-    background-color: #FF6B6B;
-    transition: background-color 0.3s;
-    max-height: 30px;
-    margin-right:auto;
-}
-
-a.nav:hover {
-    background-color: #FF69B4;
-}
-
-.nav .icon {
-    display: none;
-  }
-
 footer {
     padding: 10px;
-    background-color: #333;
+    background-color: #2C3E50 ;
     color: #fff;
     text-align: center;
 }
@@ -91,7 +63,7 @@ footer {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #fff ;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -107,22 +79,22 @@ footer {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     flex: 1;
     width:45%;
-    float:right;
-    display: inline-block;
+    float: right;
 }
 
 /* ... Your Existing Styles ... */
 
 .topnav {
-    background-color: #003333;
+    background-color: #2C3E50 ;
     overflow: hidden;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .topnav a {
-    float: left;
-    margin-left:auto;
-    color: #FF6B6B;
+
+    color: #FFFFFF;
     text-align: center;
     padding: 10px 20px;
     text-decoration: none;
@@ -134,9 +106,10 @@ footer {
     background-color: #ddd;
 }
 
-.topnav a.active {
-    color: #fff;
-    background-color: #006666;
+.nav-links { /* Style for the new container */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust this value for spacing between links if needed */
 }
 
 #logo {
@@ -169,8 +142,26 @@ footer {
     .topnav.responsive #logo {
         display: none;
     }
+    .card, .card-r{
+        width: 90%;
+        float:none;
+        margin-bottom: 10px;
+    }
+    .main-content{
+        text-align: center;
+    }
 }
 
-/*.projects{
-    background-color: ;
-}*/
+.projects{
+    background-color: /*rgba(19, 49, 84, 0.5)*/ #2C3E50;
+    padding:3%; 
+    border-radius: 50px;
+}
+
+.light-header{
+    color:white;
+}
+
+.about{
+    margin-bottom: 5%;
+}
