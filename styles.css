@@ -2,12 +2,12 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: "linotype-sabon", sans-serif;
-    color: #C0C0C0;
+    color: #C0C0C0 black;
     line-height: 1.6;
 }
 
 body {
-    background: #001F3F;
+    background: #e0e0e0/*#001F3F*/;
 }
 
 h1, h2, h3 {
@@ -15,26 +15,27 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 h1, h2, h3, h4 {
-    color: #00BFFF;
+    color: #001F3F;
 }
 
 p {
     margin-bottom: 20px;
 }
 
-.card p {
+.card, .card-r p{
     color: black;
 }
 
@@ -42,13 +43,13 @@ nav {
     padding: 0.5% 1%;
     display: flex;  
     gap: 20px;
-    background-color: #003366;
+    background-color: /*#001F3F#003366*/#333;
     border-radius: 5px;
     overflow: hidden;
 }
 
 a {
-    color: #FF1493;
+    color: #7FDBFF/*#FF1493*/;
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -95,6 +96,19 @@ footer {
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     flex: 1;
+    width:45%;
+    display: inline-block;
+}
+
+.card-r {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    width:45%;
+    float:right;
+    display: inline-block;
 }
 
 /* ... Your Existing Styles ... */
@@ -157,3 +171,6 @@ footer {
     }
 }
 
+/*.projects{
+    background-color: ;
+}*/
