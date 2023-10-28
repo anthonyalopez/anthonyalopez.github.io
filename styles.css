@@ -53,12 +53,19 @@ footer {
     padding:5%;
 }
 
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 50px;
+}
+
 .card {
     background-color: #fff ;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
+    flex: 1 0 auto;
     width:45%;
     display: inline-block;
 }
@@ -68,7 +75,7 @@ footer {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
+    flex: 1 0 auto;
     width:45%;
     float: right;
 }
@@ -106,6 +113,7 @@ footer {
     max-width: 50px;
     height: auto;
     padding: 10px;
+    border-radius: 25%;
 }
 
 .topnav .icon {
@@ -157,4 +165,11 @@ footer {
 
 .about{
     margin-bottom: 5%;
+}
+
+a#linkedin{
+    background-color: #2C3E50;
+    padding:1.5%;
+    color:white;
+    text-decoration: none;
 }
