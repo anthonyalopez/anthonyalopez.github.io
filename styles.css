@@ -173,3 +173,27 @@ a#linkedin{
     color:white;
     text-decoration: none;
 }
+
+/* Projects Page*/
+.project-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.project{
+    padding:3%;
+    width:100%;
+}
+.project-blue{
+    background-color: #2C3E50;
+    padding:3%;
+    width:100%;
+}
+.project-blue h2, h3, p{
+    color:white;
+}
+img{
+    width:35%;
+    float:left;
+    padding:3%;
+}
