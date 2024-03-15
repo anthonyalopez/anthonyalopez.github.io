@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: "linotype-sabon", sans-serif;
-    color: #C0C0C0 black #333333 ;
+    color: #C0C0C0;
     line-height: 1.6;
 }
 
@@ -10,29 +10,31 @@ body {
     background: #EDEDED /*#001F3F*/;
 }
 
-h1, h2, h3 {
-    margin-top: 0;
-}
-
 h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
+    color: #333A3F;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
     color: #555555 ;
 }
 
 p {
     margin-bottom: 20px;
+}
+
+.description{
+    color: #333A3F;
+    font-size: 1.3rem;
 }
 
 .card, .card-r p{
@@ -44,44 +46,52 @@ footer {
     background-color: #2C3E50 ;
     color: #fff;
     text-align: center;
+    margin-top: 0; /* take available whitespace */
+    margin-bottom: -10px;
 }
 
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     padding:5%;
+    padding-bottom: 0;
 }
 
-.card-section{
+.card-section {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
-    gap: 50px;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px; 
+    padding: 20px;
 }
-
 .card {
-    background-color: #fff ;
-    padding: 20px;
+    background-color: #fff;
+    padding: 20px; /* Adjust padding as needed */
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 0 auto;
-    width:45%;
-    display: inline-block;
+    width: calc(30% - 60px); /* Adjust width as needed, accounting for the gap */   
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+    height: 150px; /* Adjust height as needed to ensure cards are of equal height */
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
 }
 
-.card-r {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 0 auto;
-    width:45%;
-    float: right;
+.courses .card{
+    background-color: #2C3E50;
 }
+
+.courses h3{
+    color: #fff;
+}
+
 
 .topnav {
-    background-color: #2C3E50 ;
+    background-color: #EDEDED ;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -89,17 +99,18 @@ footer {
 }
 
 .topnav a {
-    color: #FFFFFF;
+    font-size: 1.02rem;
+    color: black;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 5px;
     text-decoration: none;
     transition: color 0.3s;
     margin-right: 20px;
 }
 
 .topnav a:hover {
-    color: #006666;
-    background-color: #ddd;
+    color: #173654;
+    text-decoration: underline #2C3E50;
 }
 
 .nav-links { /* Style for the new container */
@@ -155,45 +166,34 @@ footer {
 
 .projects{
     background-color: /*rgba(19, 49, 84, 0.5)*/ #2C3E50;
-    padding:3%; 
-    border-radius: 50px;
+    padding:3%;
+}
+
+.courses{
+    background-color: inherit;
+    padding:3%;
 }
 
 .light-header{
     color:white;
 }
-
-.about{
-    margin-bottom: 5%;
+.dark-header{
+    color:#333A3F;
 }
 
-a#linkedin{
+.about{
+    height: 100vh;
+}
+
+.link-button{
+    display: inline-block;
+    width: 4%;
     background-color: #2C3E50;
     padding:1.5%;
     color:white;
     text-decoration: none;
-}
-
-/* Projects Page*/
-.project-content{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.project{
-    padding:3%;
-    width:100%;
-}
-.project-blue{
-    background-color: #2C3E50;
-    padding:3%;
-    width:100%;
-}
-.project-blue h2, h3, p{
-    color:white;
-}
-img{
-    width:35%;
-    float:left;
-    padding:3%;
+    border-radius: 7%;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-right:10px;
 }
