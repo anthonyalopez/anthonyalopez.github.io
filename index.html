@@ -12,13 +12,13 @@
     </head>
     <body>
         <div class="topnav" id="myTopnav">
-            <img class="nav" id="logo" src="images/usbdrive.png">
+            <a href="./index.html"><img class="nav" id="logo" src="images/usbdrive.png"></a>
             <div class="nav-links">
                 <a href="./index.html">Home</a>
                 <a href="./about.html">About Me</a>
-                <a href="#projects">Projects</a>
+                <a href="./projects.html">Projects</a>
                 <a href="#courses">Courses</a>
-                <a href="#">Contact</a>
+                <a href="./contact.html">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -27,13 +27,13 @@
         <main class="main-content">
             <section class="about">
                 <h1>Hello, I'm Anthony Lopez</h1>
-                <p class="description">I am a Junior undergraduate student at the University of Maryland studying Information Science. 
+                <p class="description">I am a Senior undergraduate student at the University of Maryland studying Information Science. 
                     I am interested in all things tech: Software Development, Web Development, IT, and Cybersecurity!</p>
                 <p class="description">I have experience in HTML, CSS, JavaScript, Python, MySQL, Git/GitHub, R, and Selenium.</p>
                 <p class="description"> I am currently seeking an internship in Software Development and IT.</p>
                 <br>
                     <a class="link-button" href="https://www.linkedin.com/in/anthony-al-lopez">LinkedIn</a>
-                    <a class="link-button" href="https://github.com/anthonyalopez">Github</a>
+                    <!--<a class="link-button" href="https://github.com/anthonyalopez">Github</a>-->
             </section> 
         </main>
         <section class="projects" id="projects">
@@ -61,21 +61,76 @@
             <h2 class="dark-header">Courses</h2>
             <br>
             <div class="card-section">
-                <a href="./projects.html" class="card">
-                    <h3 class="dark-header">INST377</h3>
-                </a>
-                <a href="./projects.html" class="card">
-                    <h3 class="dark-header">INST346</h3>
-                </a>
+                <!-- Course Card 1 -->
+                <article class="card">
+                    <div class="thumb" style="background-image: url('images/webdev.jpeg');"></div>
+                    <div class="infos">
+                        <h2 class="title">
+                            Dynamic Web Applications
+                            <span class="flag"></span>
+                        </h2>
+                        <p class="txt">
+                            In this course, I explored the foundational methods and tools for developing dynamic, 
+                            database-driven websites. The course emphasized the practical aspects of integrating 
+                            databases with web interfaces to create responsive and interactive websites.
+                        </p>
+                        <h3 class="details"><a href="./projects.html">Course Projects</a></h3>
+                    </div>
+                </article>
+        
+                <!-- Course Card 2 -->
+                <article class="card">
+                    <div class="thumb" style="background-image: url('images/networks.jpeg');"></div>
+                    <div class="infos">
+                        <h2 class="title">
+                            Technologies, Infrastructure and Architecture
+                            <span class="flag"></span>
+                        </h2>
+                        <p class="txt">
+                            In this course, I examined the core concepts of computer hardware, systems software, networking, 
+                            and client/server architectures. Additionally, I reviewed current computing topics such as web environments, 
+                            Internet of Things (IoT), security, management, and policy.
+                        </p>
+                        <h3 class="details"><a href="./projects.html">Course Projects</a></h3>
+                    </div>
+                </article>
             </div>
             <br>
             <div class="card-section">
-                <a href="./projects.html" class="card">
-                    <h3 class="dark-header">INST362</h3>
-                </a>
-                <a href="./projects.html" class="card">
-                    <h3 class="dark-header">INST326</h3>
-                </a>
+                <!-- Course Card 3 -->
+                <article class="card">
+                    <div class="thumb" style="background-image:url('images/cloudcomputing.jpeg'); background-size:cover; background-repeat: no-repeat;"></div>
+                    <div class="infos">
+                        <h2 class="title">
+                            Cloud Computing
+                            <span class="flag"></span>
+                        </h2>
+                        <p class="txt">
+                            In my cloud computing course, I explored the fundamental concepts and operations of 
+                            cloud computing. Key topics included cloud functions like computing, storage, databases, 
+                            and networking, with a specific emphasis on leveraging Amazon Web Services (AWS).
+                        </p>
+                        <h3 class="details"><a href="./projects.html">Course Projects</a></h3>
+                    </div>
+                </article>
+        
+                <!-- Course Card 4 -->
+                <article class="card">
+                    <div class="thumb" style="background-image: url('images/oop.jpeg');"></div>
+                    <div class="infos">
+                        <h2 class="title">
+                            Object Oriented Programming
+                            <span class="flag"></span>
+                        </h2>
+                        <p class="txt">
+                            In this course, I learned the fundamentals of object oriented programming using Python. 
+                            I gained experience in designing, implementing, and testing applications using Python, 
+                            such as classes and inheritance. The course emphasized problem-solving and building 
+                            applications with real-world applications.
+                        </p>
+                        <h3 class="details"><a href="./projects.html">Course Projects</a></h3>
+                    </div>
+                </article>
             </div>
         </section>
         <footer>

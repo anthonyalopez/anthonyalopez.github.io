@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vur0xdg.css">
+    <link rel="icon" href="images/usbdrive.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Anthony Lopez</title>
 </head>
 <body>
-    <h1>About Me</h1>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html"><img class="nav" id="logo" src="images/usbdrive.png"></a>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html" class="active">About Me</a>
+            <a href="./projects.html">Projects</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="./contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="about">
+            <h1>About Me</h1>
+            <img id="headshot" src="images/headshot.jpg">
+            <p class="description" id="headshot-text">
+                Hi, I'm Anthony Lopez, a passionate and driven Information Science student at the University of Maryland. 
+                With a keen interest in technology and all things related to software development, I thrive on learning 
+                new concepts and applying them to real-world projects. From programming to cloud computing, I enjoy exploring 
+                different facets of tech, especially in the areas of software development, web development, and IT infrastructure.
+            </p>
+            <p class="description">
+                My academic journey has provided me with hands-on experience in a variety of technical areas such as web development, 
+                database management, object-oriented programming, and cloud technologies like AWS. I am constantly seeking to grow my 
+                knowledge base and contribute to innovative solutions.
+            </p>
+            <p class="description">
+                When I'm not coding or working on projects, you can find me reading about the latest trends in cybersecurity or exploring 
+                creative ways to enhance user experiences through design and usability.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Anthony Lopez. All rights reserved</p>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>

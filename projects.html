@@ -1,88 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.typekit.net/vur0xdg.css">
-        <link rel="icon" href="images/usbdrive.png" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Anthony's Projects</title>
-    </head>
-    <body>
-        <div class="topnav" id="myTopnav">
-            <img class="nav" id="logo" src="images/usbdrive.png">
-            <div class="nav-links">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#courses">Courses</a>
-                <a href="#">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vur0xdg.css">
+    <link rel="icon" href="images/usbdrive.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Anthony's Projects</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html"><img class="nav" id="logo" src="images/usbdrive.png"></a>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Me</a>
+            <a href="./projects.html" class="active">Projects</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="./contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <main class="main-content">
-            <section class="project">
-                <h1>Projects</h1>
-            </section>
-            <section class="project-blue">
-                <h2>Websites</h2>
-                <div class="websites">
-                    <div>
-                        <h3>Rodriguez Tax Prepare Service</h3>
-                        <img class="project-image" src="images/rodrigueztax.png">
-                    </div>
-                    <div>
-                        <h3>Antlophotography</h3>
-                        <img class="project-image" src="images/antlophotography.png">
-                    </div>
-                </div>
-            </section>
-            <section class="project-blue">
-                <h2>Course Projects</h2>
-                <div class="course-projects">
-                    <div>
-                        <h3>Course Recommender Program</h3>
-                        <img class="project-image" src="images/recommender.png">
-                    </div>
-                    <div>
-                        <h3>Cisco Packet Tracer</h3>
-                        <img class="project-image" src="images/packet-tracer.png">
+    </div>
+    <main class="main-content">
+        <section class="project">
+            <h1>Projects</h1>
+            <p class="project-description">
+                Here are some of the projects I’ve worked on, ranging from website development to app concepts 
+                and course-related projects. Each project shows my abilities in web development, programming, 
+                and design, using various tools and technologies. I’ve built dynamic websites, developed mobile apps, 
+                and worked on practical solutions for real-world challenges.
+            </p>
+        </section>
+    </main>
+            <!-- Websites Section -->
+        <section class="courses">
+            <h2>Websites</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <img class="project-image" src="images/rodrigueztax.png" alt="Rodriguez Tax Prepare Service">
+                    <h3>Rodriguez Tax Prepare Service</h3>
+                    <p>A web-based tax preparation service using HTML, CSS, and JavaScript, offering users an intuitive interface for managing taxes.</p>
+                    <div class="technologies">
+                        <img src="https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white" alt="HTML5 Badge">
+                        <img src="https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white" alt="CSS3 Badge">
+                        <img src="https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white" alt="JavaScript Badge">
                     </div>
                 </div>
-            </section>
-            <section class="project-blue">
-                <h2>App Concepts</h2>
-                <div class="app-concepts">
-                    <div>
-                        <h3>Health Tracker</h3>
-                        <img class="project-image" src="images/rodrigueztax.png">
-                    </div>
-                    <div>
-                        <h3>Animeet</h3>
-                        <img class="project-image" src="images/antlophotography.png">
+                <div class="project-card">
+                    <img class="project-image" src="images/antlophotography.png" alt="Antlophotography">
+                    <h3>Antlophotography</h3>
+                    <p>A personal photography website built using HTML, CSS, and JavaScript, showcasing automotive photography.</p>
+                    <div class="technologies">
+                        <img src="https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white" alt="HTML5 Badge">
+                        <img src="https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white" alt="CSS3 Badge">
+                        <img src="https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=white" alt="JavaScript Badge">
                     </div>
                 </div>
-            </section>
-            <section class="project-blue">
-                <h2>Other Projects</h2>
-                <div class="other-projects">
-                    <div>
-                        <h3>Blank</h3>
-                        <img class="project-image" src="images/rodrigueztax.png">
-                    </div>
-                    <div>
-                        <h3>Blank</h3>
-                        <img class="project-image" src="images/antlophotography.png">
+            </div>
+        </section>
+            <!-- Course Projects Section -->
+        <section class="projects projects-page">
+            <h2>Course Projects</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <img class="project-image" src="images/recommender.png" alt="Course Recommender Program">
+                    <h3>Course Recommender Program</h3>
+                    <p>An algorithmic program that recommends courses based on student interests, built using Python and MySQL.</p>
+                    <div class="technologies">
+                        <img src="https://img.shields.io/badge/Python-blue?logo=python&logoColor=white" alt="Python Badge">
+                        <img src="https://img.shields.io/badge/MySQL-orange?logo=mysql&logoColor=white" alt="MySQL Badge">
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <p>© 2023 Anthony Lopez. All rights reserved</p>
-        </footer>
-        <script src="main.js"></script>
-    </body>
+                <div class="project-card">
+                    <img class="project-image" src="images/packet-tracer.png" alt="Cisco Packet Tracer">
+                    <h3>Cisco Packet Tracer</h3>
+                    <p>A simulation of a network configuration for a small company using Cisco Packet Tracer, exploring networking and IT infrastructure.</p>
+                    <div class="technologies">
+                        <img src="https://img.shields.io/badge/Cisco-blue?logo=cisco&logoColor=white" alt="Cisco Badge">
+                        <img src="https://img.shields.io/badge/Networking-green?logo=network&logoColor=white" alt="Networking Badge">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="courses">
+            <section>
+            <!-- App Concepts Section -->
+            <h2>App Concepts</h2>
+            <div class="project-cards">
+                <div class="project-card">
+                    <img class="project-image" src="images/health-tracker.png" alt="Health Tracker">
+                    <h3>Health Tracker</h3>
+                    <p>A mobile app concept for tracking health data, such as steps, heart rate, and daily calorie intake, designed with a focus on UI/UX.</p>
+                    <div class="technologies">
+                        <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white" alt="Figma Badge">
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img class="project-image" src="images/animeet.jpg" alt="Animeet">
+                    <h3>Animeet</h3>
+                    <p>A concept for an app connecting anime enthusiasts through events, built using React Native for cross-platform mobile development.</p>
+                    <div class="technologies">
+                        <img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white" alt="Figma Badge">
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+    <footer>
+        <p>© 2023 Anthony Lopez. All rights reserved</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
 </html>

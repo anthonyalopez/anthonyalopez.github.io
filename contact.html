@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vur0xdg.css">
+    <link rel="icon" href="images/usbdrive.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Anthony Lopez</title>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="./index.html"><img class="nav" id="logo" src="images/usbdrive.png"></a>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About Me</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./index.html#courses">Courses</a>
+            <a href="./contact.html" class="active">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <p class="description">
+                I’m always excited to connect with fellow professionals, tech enthusiasts, and potential employers. 
+                Whether you're interested in my projects, have an opportunity to discuss, or just want to chat about tech, 
+                feel free to reach out. You can contact me through any of the channels below or use the contact form.
+            </p>
+            <br>
+            <div class="contact-details">
+                <ul>
+                    <li><strong>Email:</strong> antlopez.aal@gmail.com</li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anthony-al-lopez" target="_blank">linkedin.com/in/anthony-al-lopez</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/anthonyalopez" target="_blank">github.com/anthonyalopez</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Form -->
+            <h2>Contact Form</h2>
+            <form action="submit_form.php" method="post" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Anthony Lopez. All rights reserved</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
