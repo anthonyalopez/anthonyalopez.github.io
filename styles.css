@@ -247,7 +247,7 @@ footer {
     color: #333A3F;
 }
 
-.about {
+.about{
     height: 100vh;
 }
 
@@ -459,4 +459,38 @@ footer {
     font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
+}
+
+#resume {
+    width: 100%;
+    padding: 20px 0; /* Optional padding for spacing */
+    text-align: center; /* Centers the h2 text */
+}
+
+.responsive-pdf {
+    display: flex;
+    justify-content: center; /* Centers the iframe horizontally */
+    align-items: flex-start; /* Keeps the iframe aligned at the top, not centered vertically */
+    width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centers the div itself */
+}
+
+.responsive-pdf iframe {
+    width: 70%; /* Adjust to your preferred width */
+    height: 90vh; /* Full height of the viewport */
+    border: none;
+    margin: 0; /* Ensure no extra margins are applied */
+}
+
+/* Responsive handling for smaller screens */
+@media (max-width: 768px) {
+    .responsive-pdf iframe {
+        width: 95%; /* More space on smaller screens */
+        height: 80vh; /* Adjust height for smaller screens */
+    }
+}
+
+#formheader{
+    margin:0;
 }
